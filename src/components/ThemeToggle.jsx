@@ -19,12 +19,12 @@ export const ThemeToggle = () =>{
 
   const toggleTheme = () => {
     if(isDarkMode) {
-        document.documentElement.classList.remove('light');
-        localStorage.setItem('theme', 'dark');
+        document.documentElement.classList.remove('dark');
+        localStorage.setItem('theme', 'light');
       setIsDarkMode(false);
     } else {
-      document.documentElement.classList.add('light');
-      localStorage.setItem('theme', 'light');
+      document.documentElement.classList.add('dark');
+      localStorage.setItem('theme', 'dark');
       setIsDarkMode(true);
     }
   }
